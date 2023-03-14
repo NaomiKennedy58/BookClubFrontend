@@ -58,7 +58,7 @@ export const CalendarMonth = styled.div`
   user-select: none;
 `;
 
-export const CalendarCell = styled.div`
+export const CalendarCell = styled.div<{index: number}>`
   text-align: center;
   align-self: center;
   letter-spacing: 0.1rem;
@@ -76,7 +76,7 @@ export const CalendarDay = styled(CalendarCell)`
   border-right: ${props => (props.index % 7) + 1 === 7 ? `none` : `2px solid #06c`};
 `;
 
-export const CalendarDate = styled(CalendarCell)`
+export const CalendarDate = styled(CalendarCell)<{inMonth: boolean}>`
   font-weight: ${props => props.inMonth ? 500 : 300};
   font-size: 4em;
   cursor: pointer;

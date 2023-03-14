@@ -13,6 +13,8 @@ const Meeting = styled.div`
 
 // const Description = styled.div``;
 
+const MeetingInformation = styled.div``;
+
 const Date = styled.div``;
 
 const StartTime = styled.div``;
@@ -27,6 +29,7 @@ const EndTime = styled.div``;
 
 const styles = {
     Meeting,
+    MeetingInformation,
     Date,
     StartTime,
     EndTime,

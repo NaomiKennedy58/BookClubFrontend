@@ -1,5 +1,5 @@
 export default interface Meeting {
     Date: string;
-    StartTime: string;
-    EndTime: string;
+    StartTime: string | Date;
+    EndTime: string | Date;
 }
